@@ -1,0 +1,62 @@
+export const sampleTasks = {
+  todo: [
+    {
+      title: 'Design Login Page',
+      description: 'Create a responsive login page UI',
+      tag: 'UI/UX',
+      assignees: ['YOU'],
+      createdBy: 'YOU',
+      priority: 'high',
+      date: '2025-05-16',
+    },
+    {
+      title: 'Setup MongoDB',
+      description: 'Initialize MongoDB database with schemas',
+      tag: 'Backend',
+      assignees: ['John'],
+      createdBy: 'Alice',
+      priority: 'medium',
+      date: '2025-05-17',
+    },
+  ],
+  inProgress: [
+    {
+      title: 'API Integration',
+      description: 'Connect frontend to Express APIs',
+      tag: 'Integration',
+      assignees: ['YOU', 'Sarah'],
+      createdBy: 'YOU',
+      priority: 'high',
+      date: '2025-05-16',
+    },
+    {
+      title: 'Team Setup',
+      description: 'Add members to project board',
+      tag: 'Management',
+      assignees: ['Mike'],
+      createdBy: 'Bob',
+      priority: 'low',
+      date: '2025-05-17',
+    },
+  ],
+  done: [
+    {
+      title: 'Project Planning',
+      description: 'Define project scope and features',
+      tag: 'Planning',
+      assignees: ['YOU'],
+      createdBy: 'YOU',
+      priority: 'medium',
+      date: '2025-05-14',
+    },
+    {
+      title: 'Landing Page Design',
+      description: 'Initial Figma designs completed',
+      tag: 'Design',
+      assignees: ['Alice'],
+      createdBy: 'Sarah',
+      priority: 'low',
+      date: '2025-05-12',
+    },
+  ],
+};
