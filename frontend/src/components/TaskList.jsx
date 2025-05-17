@@ -13,7 +13,7 @@ export const TaskList = () => {
   // ✅ Move fetchTasks outside useEffect
   const fetchTasks = async () => {
     try {
-      const response = await fetch("http://localhost:5000/tasks");
+      const response = await fetch("https://taskmanage-w85m.onrender.com");
       const data = await response.json();
       setTasks(data);
     } catch (error) {
@@ -28,7 +28,7 @@ export const TaskList = () => {
 
   const addTask = async (taskData) => {
     try {
-      const response = await fetch("http://localhost:5000/tasks", {
+      const response = await fetch("https://taskmanage-w85m.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(taskData),
@@ -48,7 +48,7 @@ export const TaskList = () => {
 
  const editTask = async (taskId, updatedTask) => {
   try {
-    const response = await fetch(`http://localhost:5000/tasks/${taskId}`, {
+    const response = await fetch(`https://taskmanage-w85m.onrender.com/${taskId}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedTask),
@@ -75,7 +75,7 @@ export const TaskList = () => {
 
   const deleteTask = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:5000/tasks/${taskId}`, {
+      const response = await fetch(`https://taskmanage-w85m.onrender.com/${taskId}`, {
         method: "DELETE",
       });
 
