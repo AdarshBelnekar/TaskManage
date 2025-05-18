@@ -48,7 +48,7 @@ export const TaskList = () => {
 
  const editTask = async (taskId, updatedTask) => {
   try {
-    const response = await fetch(`https://taskmanage-w85m.onrender.com/tasks/${taskId}`, {
+    const response = await fetch(`https://taskmanage-w85m.onrender.com/task/${taskId}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedTask),
