@@ -43,7 +43,7 @@ export function AddTaskPanel({ users = [], onClose, onCreate, task = null }) {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/tasks", {
+      const response = await fetch("https://taskmanage-w85m.onrender.com/tasks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newTask),
